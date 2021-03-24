@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.ssomai.android.scalablelayout.ScalableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/background_light"
+        app:scale_base_height="1920"
+        app:scale_base_width="1080">
+
+        <LinearLayout
+            android:id="@+id/Layout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:scale_height="400"
+            app:scale_left="0"
+            app:scale_top="550"
+            app:scale_width="1080"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Q3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="20dp" />
+
+            <RadioGroup
+                android:id="@+id/R3"
+                android:layout_width="match_parent"
+                android:layout_height="74dp">
+
+                <RadioButton
+                    android:id="@+id/YesButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Yes" />
+
+                <RadioButton
+                    android:id="@+id/NoButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="No" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/Donebutton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#D5D5D5"
+            android:text="Complete"
+            app:scale_height="200"
+            app:scale_left="0"
+            app:scale_top="1000"
+            app:scale_width="1080" />
+    </com.ssomai.android.scalablelayout.ScalableLayout>
+
+</android.support.constraint.ConstraintLayout>
